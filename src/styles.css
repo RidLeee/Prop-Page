@@ -1,0 +1,118 @@
+/* Style the header */
+
+* {
+    box-sizing: border-box;
+}
+
+/*===============================================================================================*/
+
+.planet-ticker {
+    font-size:  15px;
+    padding-block: 8px;
+    border-block: 1px solid;
+    overflow: hidden;
+    user-select: none;
+
+    --gap: 100px;
+    display: flex;
+    gap: var(--gap);
+}
+
+.planet-ticker ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+.planet-ticker li{
+    font-weight: bold;
+}
+
+/*===============================================================================================*/
+
+.row {
+    display: flex;
+    margin-top: 20px;
+}
+
+.columnmiddle {
+    outline: 2px dashed red;
+    flex: 30%;
+    margin-left: 75px;
+    margin-right: 75px;
+
+}
+
+.columnleft {
+    outline: 2px dashed blue;
+    flex: 30%;
+    margin-left: 10%;
+
+}
+
+.columnright {
+    outline: 2px dashed blue;
+    flex: 30%;
+    margin-right: 10%;
+
+}
+
+/*===============================================================================================*/
+
+body {
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+    margin: 0;
+}
+
+.nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+}
+
+.site-title {
+    color: #FDDA0D;
+    font-size: 3rem;
+}
+
+.nav ul {
+    padding-right: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav a {
+    color: #FDDA0D;
+    font-size: 22px;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+}
+
+.nav li.active {
+    background-color: #555;
+}
+
+.nav li:hover {
+    background-color: #777;
+}
