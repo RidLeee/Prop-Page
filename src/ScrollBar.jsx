@@ -18,24 +18,24 @@ function ScrollBar() {
                 return response.json();
             })
             .then((json) => {
-                console.log(json[0])
+                //console.log(json[0])
                 setLength(json);
 
                 const planetsName = json.map((item) => item.name);
                 setPlanets(planetsName)
-                console.log(planets)
+                //console.log(planets)
 
                 const compPercents = json.map((item) => item.percentage);
                 setPercents(compPercents)
-                console.log(percents)
+                //console.log(percents)
 
                 const factionName = json.map((item) => item.faction);
                 setFactions(factionName)
-                console.log(factions)
+                //console.log(factions)
 
                 const playerCount = json.map((item) => item.players);
                 setPlayers(playerCount)
-                console.log(players)
+                //console.log(players)
 
                 
             })

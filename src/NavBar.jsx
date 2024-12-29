@@ -2,20 +2,11 @@ export default function NavBar() {
     return (
         <nav className='nav'>
             <div className='site-title'>
-                Site Name
+                Brasch News
             </div>
             <ul>
                 <li className="Active">
-                    <a href='/Enlist'>Enlist</a>
-                </li>
-                <li className="Active">
-                    <a href='/Volunteer'>Volunteer</a>
-                </li>
-                <li className="Active">
-                    <a href='/Education'>Education</a>
-                </li>
-                <li className="Active">
-                    <a href='/Donations'>Donations</a>
+                    <a href='/Enlist'>Your Only Source for News on Democracy and Freedom!</a>
                 </li>
             </ul>
         </nav>

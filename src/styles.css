@@ -5,6 +5,24 @@
 }
 
 /*===============================================================================================*/
+.article-title {
+    margin-top: 5px;
+    font-weight: Bold;
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+    margin-bottom: 5px;
+    font-size: 23px;
+    letter-spacing: 0.06em;
+}
+
+hr {
+    border-bottom: 3px solid black;
+    margin-top: 0.5;
+    margin-bottom: 0.5;
+    width: 35px;
+    margin-left: 0;
+}
+
+/*===============================================================================================*/
 
 .planet-ticker {
     font-size:  15px;
@@ -44,33 +62,107 @@
 
 /*===============================================================================================*/
 
-.row {
-    display: flex;
-    margin-top: 20px;
+.articlesplit {
+    border-bottom: 1px solid black;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    width: 80%;
+    margin-left: 10%;
+    opacity: 25%;
 }
 
-.columnmiddle {
-    outline: 2px dashed red;
-    flex: 30%;
-    margin-left: 75px;
-    margin-right: 75px;
+.row {
+    display: flex;
+    margin-top: 35px;
+    width: 100%;
+}
 
+.column {
+    max-width: 33%;
+}
+
+.alignRight {
+    justify-content: right;
+}
+
+.article-body {
+    font-size: 25px;
+    font-family: Verdana, sans-serif;
+    letter-spacing: 0.02em;
+    color: #444;
 }
 
 .columnleft {
-    outline: 2px dashed blue;
-    flex: 30%;
-    margin-left: 10%;
+    margin-left: 12%;
+    margin-right: 50px;
+}
 
+.Collapsible {
+    font-family: Verdana, sans-serif;
+    margin-bottom: 2.5px;
+    font-size: 13.5px;
+    letter-spacing: 0.07em;
+    width: 100%;
+}
+
+.Collapsible li{
+    font-family: Verdana, sans-serif;
+    margin-bottom: 8px;
+    margin-right: 15px;
+    font-size: 11.5px;
+    letter-spacing: 0.07em;
+}
+
+.Collapsible__trigger:hover {
+    background-color: yellow;
+}
+
+.container {
+    position: relative;
+    letter-spacing: 0.07em
+}
+
+.smallcontainer {
+    display: flex; /* Aligns items horizontally */
+    align-items: flex-start; /* Vertically aligns image and text */
+    letter-spacing: 0.07em;
+}
+
+.bottom-left {
+    color: black;
+    text-align: left; /* Align text normally within the container */
+    margin-left: 15px; /* Adds spacing between the text and the image */
+    margin-right: 15px;
+    padding: 0;
+    margin-top: 0px;
+    font-size: 18px;
+    opacity: 60%;
+}
+
+.bottom-right {
+    color: white;
+    text-align: left;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    margin-right: 15px;
+    font-size: 20px;
 }
 
 .columnright {
-    outline: 2px dashed blue;
-    flex: 30%;
-    margin-right: 10%;
-
+    margin-right: 12%;
+    margin-left: 50px;
+    max-width: 28%;
 }
 
+.rightarticles {
+    font-size: 30px;
+    font-family: Verdana, sans-serif;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    font-size: 16px;
+    letter-spacing: 0.07em;
+}
 /*===============================================================================================*/
 
 body {

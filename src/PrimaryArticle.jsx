@@ -29,10 +29,13 @@ function PrimaryArticle() {
 
     return (
         <div>
+            <img src="/src/images/Main-Article.png" width="100%"/>
             {error ? (
                 <div>Error: {error}</div>
             ) : overrideBrief ? (
-                <div>{overrideBrief}</div>
+                <div className="article-body">
+                    {overrideBrief}
+                </div>
             ) : (
                 'Loading...'
             )}
